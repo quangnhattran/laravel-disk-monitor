@@ -36,13 +36,13 @@ composer require quangvision/laravel-disk-monitor
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Qt\DiskMonitor\DiskMonitorServiceProvider" --tag="laravel-disk-monitor-migrations"
+php artisan vendor:publish --provider="Qt\DiskMonitor\DiskMonitorServiceProvider" --tag="disk-monitor-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Qt\DiskMonitor\DiskMonitorServiceProvider" --tag="laravel-disk-monitor-config"
+php artisan vendor:publish --provider="Qt\DiskMonitor\DiskMonitorServiceProvider" --tag="disk-monitor-config"
 ```
 
 This is the contents of the published config file:
