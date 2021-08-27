@@ -34,6 +34,5 @@ class TestCase extends Orchestra
 
         $migration = include __DIR__.'/../database/migrations/create_disk-monitor_table.php.stub';
         $migration->up();
-
     }
 }
