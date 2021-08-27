@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Qt\\LaravelDiskMonitor\\": "src",
-            "Qt\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories"
+            "Qt\\DiskMonitor\\": "src",
+            "Qt\\DiskMonitor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Qt\\LaravelDiskMonitor\\Tests\\": "tests"
+            "Qt\\DiskMonitor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,11 +50,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Qt\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
-            ],
-            "aliases": {
-                "LaravelDiskMonitor": "Qt\\LaravelDiskMonitor\\LaravelDiskMonitorFacade"
-            }
+                "Qt\\DiskMonitor\\DiskMonitorServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

@@ -1,2 +1,2 @@
 providers:
-  - Qt\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider
+  - Qt\DiskMonitor\DiskMonitorServiceProvider

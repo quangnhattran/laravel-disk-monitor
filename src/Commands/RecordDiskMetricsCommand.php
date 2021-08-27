@@ -1,10 +1,10 @@
 <?php
 
-namespace Qt\LaravelDiskMonitor\Commands;
+namespace Qt\DiskMonitor\Commands;
 
 use Illuminate\Console\Command;
 
-class LaravelDiskMonitorCommand extends Command
+class RecordDiskMetricsCommand extends Command
 {
     public $signature = 'laravel-disk-monitor';
 

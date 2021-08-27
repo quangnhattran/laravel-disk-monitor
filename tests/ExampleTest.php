@@ -1,6 +1,6 @@
 <?php
 
-namespace Qt\LaravelDiskMonitor\Tests;
+namespace Qt\DiskMonitor\Tests;
 
 class ExampleTest extends TestCase
 {

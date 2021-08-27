@@ -1,12 +1,12 @@
 <?php
 
-namespace Qt\LaravelDiskMonitor;
+namespace Qt\DiskMonitor;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Qt\LaravelDiskMonitor\Commands\LaravelDiskMonitorCommand;
+use Qt\DiskMonitor\Commands\RecordDiskMetricsCommand;
 
-class LaravelDiskMonitorServiceProvider extends PackageServiceProvider
+class DiskMonitorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -19,7 +19,8 @@ class LaravelDiskMonitorServiceProvider extends PackageServiceProvider
             ->name('laravel-disk-monitor')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_laravel-disk-monitor_table')
-            ->hasCommand(LaravelDiskMonitorCommand::class);
+            ->hasMigration('create_disk-monitor_table')
+            ->hasCommand(RecordDiskMetricsCommand::class);
     }
 }
+
