@@ -4,10 +4,10 @@ namespace Qt\DiskMonitor;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use Qt\DiskMonitor\Commands\RecordDiskMetricsCommand;
 use Qt\DiskMonitor\Http\Controllers\DiskMetricsController;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Qt\DiskMonitor\Commands\RecordDiskMetricsCommand;
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {
@@ -35,4 +35,3 @@ class DiskMonitorServiceProvider extends PackageServiceProvider
         });
     }
 }
-
