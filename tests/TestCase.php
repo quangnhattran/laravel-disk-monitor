@@ -3,6 +3,7 @@
 namespace Qt\DiskMonitor\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Qt\DiskMonitor\DiskMonitorServiceProvider;
 
@@ -15,6 +16,8 @@ class TestCase extends Orchestra
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'Qt\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
+
+        Route::diskMonitor('disk-monitor');
     }
 
     protected function getPackageProviders($app)
